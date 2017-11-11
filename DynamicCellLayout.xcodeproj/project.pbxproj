@@ -15,6 +15,7 @@
 		E3911ED61FB5EEE3006889BB /* DynamicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3911ED51FB5EEE3006889BB /* DynamicCell.xib */; };
 		E3911ED81FB5EEF0006889BB /* DynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3911ED71FB5EEF0006889BB /* DynamicCell.swift */; };
 		E3CA6F8C1FB5F5EB008BAE36 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = E3CA6F8B1FB5F5EB008BAE36 /* image.png */; };
+		E3CA6F8E1FB68319008BAE36 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CA6F8D1FB68319008BAE36 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E3911ED51FB5EEE3006889BB /* DynamicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicCell.xib; sourceTree = "<group>"; };
 		E3911ED71FB5EEF0006889BB /* DynamicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCell.swift; sourceTree = "<group>"; };
 		E3CA6F8B1FB5F5EB008BAE36 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		E3CA6F8D1FB68319008BAE36 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				E3911EC71FB5EACB006889BB /* Main.storyboard */,
 				E3911ED51FB5EEE3006889BB /* DynamicCell.xib */,
 				E3911ED71FB5EEF0006889BB /* DynamicCell.swift */,
+				E3CA6F8D1FB68319008BAE36 /* Item.swift */,
 				E3911ECA1FB5EACB006889BB /* Assets.xcassets */,
 				E3CA6F8B1FB5F5EB008BAE36 /* image.png */,
 				E3911ECC1FB5EACB006889BB /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3CA6F8E1FB68319008BAE36 /* Item.swift in Sources */,
 				E3911EC61FB5EACB006889BB /* ViewController.swift in Sources */,
 				E3911ED81FB5EEF0006889BB /* DynamicCell.swift in Sources */,
 				E3911EC41FB5EACB006889BB /* AppDelegate.swift in Sources */,

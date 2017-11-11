@@ -3,7 +3,7 @@ import UIKit
 final class DynamicCell: UITableViewCell {
 
     @IBOutlet weak var staticLabel: UILabel!
-    @IBOutlet weak var dynamicView: UIView!
+    @IBOutlet weak var dynamicLabel: UILabel!
     @IBOutlet weak var dynamicImageView: UIImageView!
 
     static func nib() -> UINib {
@@ -11,5 +11,11 @@ final class DynamicCell: UITableViewCell {
     }
 
     static let identifier: String = "DynamicCell"
+
+    func update(item: Item) {
+        staticLabel.text = item.staticLabelText
+        dynamicLabel.text = item.dynamicLabelText
+        dynamicImageView.image = UIImage(named: item.imageName ?? "")
+    }
 
 }

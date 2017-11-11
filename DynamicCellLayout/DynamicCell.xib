@@ -64,7 +64,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="dynamicImageView" destination="T6T-HW-6Ai" id="pYT-LQ-nRm"/>
-                <outlet property="dynamicView" destination="U4r-Cl-3WB" id="vzf-12-Uqy"/>
+                <outlet property="dynamicLabel" destination="5aX-5A-qAV" id="a6u-33-zDG"/>
                 <outlet property="staticLabel" destination="TsJ-WG-5P5" id="lbE-Ub-GQG"/>
             </connections>
             <point key="canvasLocation" x="-90" y="38"/>
