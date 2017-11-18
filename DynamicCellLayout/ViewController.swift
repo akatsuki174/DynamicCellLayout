@@ -2,22 +2,14 @@ import UIKit
 
 final class ViewController: UITableViewController {
     
-    private var items: [Item] = []
+    private var items: [ItemViewModel.Item] = []
+    private var viewModel: ItemViewModel = ItemViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(DynamicCell.nib(), forCellReuseIdentifier: DynamicCell.identifier)
         
-        items.append(Item())
-        items.append(Item(dynamicLabelText: nil))
-        items.append(Item(imageName: nil))
-        items.append(Item(imageName: nil))
-        items.append(Item(dynamicLabelText: nil, imageName: nil))
-        items.append(Item())
-        items.append(Item(imageName: nil))
-        items.append(Item(dynamicLabelText: nil, imageName: nil))
-        items.append(Item())
-        items.append(Item(dynamicLabelText: nil))
+        items = viewModel.getTenItems()
     }
 
     override func didReceiveMemoryWarning() {

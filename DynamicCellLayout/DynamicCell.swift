@@ -19,7 +19,7 @@ final class DynamicCell: UITableViewCell {
 
     static let identifier: String = "DynamicCell"
 
-    func update(item: Item) {
+    func update(item: ItemViewModel.Item) {
         staticLabel.text = item.staticLabelText
         
         if let text = item.dynamicLabelText {
