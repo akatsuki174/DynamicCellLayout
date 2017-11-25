@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,38 +38,6 @@
             </objects>
             <point key="canvasLocation" x="89" y="-891"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="xOE-sm-7cp">
-            <objects>
-                <viewController id="Shz-N2-iFZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="URI-K9-OVB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="2eU-Rq-S8Y"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="iee-f0-R8x"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UwQ-eb-1Cz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="90" y="453"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="m5h-mt-TIj">
-            <objects>
-                <viewController id="5J2-zd-wpa" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nsi-Ia-XiI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Zvl-1u-JZk"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="foC-aG-gsZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nl-Pj-bej" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="90" y="-213"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Wuh-ln-k5v">
             <objects>
@@ -82,13 +49,41 @@
                     </tabBar>
                     <connections>
                         <segue destination="qVD-vT-7Eh" kind="relationship" relationship="viewControllers" id="L1o-dt-Wrh"/>
-                        <segue destination="5J2-zd-wpa" kind="relationship" relationship="viewControllers" id="Ies-VJ-PM9"/>
-                        <segue destination="Shz-N2-iFZ" kind="relationship" relationship="viewControllers" id="hYN-yK-z4f"/>
+                        <segue destination="qXD-XR-cvs" kind="relationship" relationship="viewControllers" id="RyG-dm-7VU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvw-li-0vR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-863" y="120"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="WIy-gM-eWf">
+            <objects>
+                <tableViewController id="qXD-XR-cvs" customClass="ViewController2" customModule="DynamicCellLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ESi-4v-7Qt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Q4l-Of-Cgy">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q4l-Of-Cgy" id="iA9-CY-AKl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qXD-XR-cvs" id="Y3F-I5-Ack"/>
+                            <outlet property="delegate" destination="qXD-XR-cvs" id="xs5-eK-EtT"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="jI6-Xn-rMS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgH-0J-5kd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24" y="220"/>
         </scene>
     </scenes>
 </document>
