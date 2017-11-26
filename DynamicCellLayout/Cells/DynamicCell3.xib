@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Dynamic Cell 2" customClass="DynamicCell2" customModule="DynamicCellLayout" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Dynamic Cell 3" customClass="DynamicCell3" customModule="DynamicCellLayout" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="523" height="213"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -27,7 +27,7 @@
                     <rect key="frame" x="20" y="103" width="483" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aX-5A-qAV">
-                            <rect key="frame" x="10" y="15" width="0.0" height="0.0"/>
+                            <rect key="frame" x="10" y="15.5" width="0.0" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -51,37 +51,29 @@
             <constraints>
                 <constraint firstItem="U4r-Cl-3WB" firstAttribute="top" secondItem="TsJ-WG-5P5" secondAttribute="bottom" constant="20" id="2n8-xR-6FM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T6T-HW-6Ai" secondAttribute="trailing" constant="20" id="Hd7-F2-tlf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="T6T-HW-6Ai" secondAttribute="bottom" priority="1" constant="-40" id="RM3-Eo-yht"/>
+                <constraint firstItem="T6T-HW-6Ai" firstAttribute="top" secondItem="U4r-Cl-3WB" secondAttribute="bottom" priority="1" constant="-30" id="WgU-0t-3Bx"/>
                 <constraint firstItem="U4r-Cl-3WB" firstAttribute="leading" secondItem="TsJ-WG-5P5" secondAttribute="leading" id="bZM-Hk-ZNS"/>
                 <constraint firstItem="TsJ-WG-5P5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="dVJ-k3-rFd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="T6T-HW-6Ai" secondAttribute="bottom" constant="20" id="hzy-Oe-bEU"/>
                 <constraint firstItem="TsJ-WG-5P5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="mXZ-R2-nhM"/>
                 <constraint firstItem="T6T-HW-6Ai" firstAttribute="leading" secondItem="U4r-Cl-3WB" secondAttribute="leading" id="nW7-3G-e1k"/>
-                <constraint firstItem="T6T-HW-6Ai" firstAttribute="top" secondItem="TsJ-WG-5P5" secondAttribute="bottom" constant="20" id="pt0-LK-wwy"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="U4r-Cl-3WB" secondAttribute="bottom" constant="20" id="qkx-2R-PgV"/>
                 <constraint firstItem="T6T-HW-6Ai" firstAttribute="top" secondItem="U4r-Cl-3WB" secondAttribute="bottom" constant="20" id="t7X-8G-uDh"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="U4r-Cl-3WB" secondAttribute="trailing" constant="20" id="xvB-Qp-gFo"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="qkx-2R-PgV"/>
-                    <exclude reference="pt0-LK-wwy"/>
-                </mask>
-            </variation>
             <connections>
-                <outlet property="dynamicImageView" destination="T6T-HW-6Ai" id="6xy-pF-ygk"/>
-                <outlet property="dynamicLabel" destination="5aX-5A-qAV" id="vqm-1w-x8t"/>
-                <outlet property="dynamicView" destination="U4r-Cl-3WB" id="e0h-E5-OcR"/>
-                <outlet property="dynamicViewHeightConstraint" destination="p8I-PU-wAz" id="9RH-CL-oU9"/>
-                <outlet property="dynamicViewToBottomConstraint" destination="qkx-2R-PgV" id="o8i-lz-c28"/>
-                <outlet property="dynamicViewToDynamicImageConstraint" destination="t7X-8G-uDh" id="rUL-aE-svW"/>
-                <outlet property="imageViewHeightConstraint" destination="j9d-G0-Tyc" id="sl3-JM-Shm"/>
-                <outlet property="staticLabel" destination="TsJ-WG-5P5" id="BDs-u1-yTo"/>
-                <outlet property="staticLabelToDynamicImageConstraint" destination="pt0-LK-wwy" id="7oC-pg-UAZ"/>
-                <outlet property="staticLabelToDynamicViewConstraint" destination="2n8-xR-6FM" id="KQ8-5B-3qo"/>
+                <outlet property="dynamicImageView" destination="T6T-HW-6Ai" id="pYT-LQ-nRm"/>
+                <outlet property="dynamicLabel" destination="5aX-5A-qAV" id="a6u-33-zDG"/>
+                <outlet property="dynamicLabelHideConstraint" destination="WgU-0t-3Bx" id="qnm-6t-kvD"/>
+                <outlet property="dynamicLabelShowConstraint" destination="t7X-8G-uDh" id="bzj-z7-bCf"/>
+                <outlet property="dynamicView" destination="U4r-Cl-3WB" id="HNF-Yv-dfT"/>
+                <outlet property="imageHideConstraint" destination="RM3-Eo-yht" id="PRa-xc-tUi"/>
+                <outlet property="imageShowConstraint" destination="hzy-Oe-bEU" id="F6a-Im-PCf"/>
+                <outlet property="staticLabel" destination="TsJ-WG-5P5" id="lbE-Ub-GQG"/>
             </connections>
-            <point key="canvasLocation" x="-90.5" y="37.5"/>
+            <point key="canvasLocation" x="-90" y="38"/>
         </view>
     </objects>
 </document>
