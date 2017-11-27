@@ -7,12 +7,12 @@ final class DynamicCell3: UITableViewCell {
     @IBOutlet weak var dynamicView: UIView!
     @IBOutlet weak var dynamicImageView: UIImageView!
     
-    @IBOutlet weak var dynamicLabelShowConstraint: NSLayoutConstraint!
-    @IBOutlet weak var dynamicLabelHideConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var imageShowConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageHideConstraint: NSLayoutConstraint!
-    
+    @IBOutlet weak var dynamicViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var dynamicViewHeightConstraint: NSLayoutConstraint!
+
+    @IBOutlet weak var dynamicImageTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var dynamicImageHeightConstraint: NSLayoutConstraint!
+
     static func nib() -> UINib {
         return UINib(nibName: "DynamicCell3", bundle: nil)
     }
@@ -25,23 +25,23 @@ final class DynamicCell3: UITableViewCell {
         if let text = item.dynamicLabelText {
             dynamicView.isHidden = false
             dynamicLabel.text = text
-            dynamicLabelShowConstraint.priority = UILayoutPriority.defaultHigh
-            dynamicLabelHideConstraint.priority = UILayoutPriority.defaultLow
+            dynamicViewTopConstraint.constant = 20
+            dynamicViewHeightConstraint.constant = 30
         } else {
             dynamicView.isHidden = true
-            dynamicLabelShowConstraint.priority = UILayoutPriority.defaultLow
-            dynamicLabelHideConstraint.priority = UILayoutPriority.defaultHigh
+            dynamicLabel.text = nil
+            dynamicViewTopConstraint.constant = 0
+            dynamicViewHeightConstraint.constant = 0
         }
         
         if let imageName = item.imageName {
-            dynamicImageView?.isHidden = false
             dynamicImageView.image = UIImage(named: imageName)
-            imageShowConstraint.priority = UILayoutPriority.defaultHigh
-            imageHideConstraint.priority = UILayoutPriority.defaultLow
+            dynamicImageTopConstraint.constant = 20
+            dynamicImageHeightConstraint.constant = 40
         } else {
-            dynamicImageView?.isHidden = true
-            imageShowConstraint.priority = UILayoutPriority.defaultLow
-            imageHideConstraint.priority = UILayoutPriority.defaultHigh
+            dynamicImageView.image = nil
+            dynamicImageTopConstraint.constant = 0
+            dynamicImageHeightConstraint.constant = 0
         }
     }
 

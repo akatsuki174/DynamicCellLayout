@@ -7,7 +7,7 @@ final class ViewController3: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(DynamicCell.nib(), forCellReuseIdentifier: DynamicCell.identifier)
+        tableView.register(DynamicCell3.nib(), forCellReuseIdentifier: DynamicCell3.identifier)
         
         items = viewModel.getTenItems()
     }
@@ -28,7 +28,7 @@ extension ViewController3 {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: DynamicCell.identifier, for: indexPath) as? DynamicCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: DynamicCell3.identifier, for: indexPath) as? DynamicCell3 else {
             fatalError("Could not find proper cell")
         }
         cell.update(item: items[indexPath.row])

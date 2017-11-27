@@ -51,8 +51,6 @@
             <constraints>
                 <constraint firstItem="U4r-Cl-3WB" firstAttribute="top" secondItem="TsJ-WG-5P5" secondAttribute="bottom" constant="20" id="2n8-xR-6FM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T6T-HW-6Ai" secondAttribute="trailing" constant="20" id="Hd7-F2-tlf"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="T6T-HW-6Ai" secondAttribute="bottom" priority="1" constant="-40" id="RM3-Eo-yht"/>
-                <constraint firstItem="T6T-HW-6Ai" firstAttribute="top" secondItem="U4r-Cl-3WB" secondAttribute="bottom" priority="1" constant="-30" id="WgU-0t-3Bx"/>
                 <constraint firstItem="U4r-Cl-3WB" firstAttribute="leading" secondItem="TsJ-WG-5P5" secondAttribute="leading" id="bZM-Hk-ZNS"/>
                 <constraint firstItem="TsJ-WG-5P5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="dVJ-k3-rFd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="T6T-HW-6Ai" secondAttribute="bottom" constant="20" id="hzy-Oe-bEU"/>
@@ -64,13 +62,13 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="dynamicImageHeightConstraint" destination="j9d-G0-Tyc" id="e9g-kG-i8g"/>
+                <outlet property="dynamicImageTopConstraint" destination="t7X-8G-uDh" id="YMq-XJ-Xef"/>
                 <outlet property="dynamicImageView" destination="T6T-HW-6Ai" id="pYT-LQ-nRm"/>
                 <outlet property="dynamicLabel" destination="5aX-5A-qAV" id="a6u-33-zDG"/>
-                <outlet property="dynamicLabelHideConstraint" destination="WgU-0t-3Bx" id="qnm-6t-kvD"/>
-                <outlet property="dynamicLabelShowConstraint" destination="t7X-8G-uDh" id="bzj-z7-bCf"/>
                 <outlet property="dynamicView" destination="U4r-Cl-3WB" id="HNF-Yv-dfT"/>
-                <outlet property="imageHideConstraint" destination="RM3-Eo-yht" id="PRa-xc-tUi"/>
-                <outlet property="imageShowConstraint" destination="hzy-Oe-bEU" id="F6a-Im-PCf"/>
+                <outlet property="dynamicViewHeightConstraint" destination="p8I-PU-wAz" id="zZH-5l-JTh"/>
+                <outlet property="dynamicViewTopConstraint" destination="2n8-xR-6FM" id="lAH-5W-OE4"/>
                 <outlet property="staticLabel" destination="TsJ-WG-5P5" id="lbE-Ub-GQG"/>
             </connections>
             <point key="canvasLocation" x="-90" y="38"/>
