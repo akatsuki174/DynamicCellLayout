@@ -29,7 +29,6 @@ final class DynamicCell3: UITableViewCell {
             dynamicViewHeightConstraint.constant = 30
         } else {
             dynamicView.isHidden = true
-            dynamicLabel.text = nil
             dynamicViewTopConstraint.constant = 0
             dynamicViewHeightConstraint.constant = 0
         }
@@ -39,7 +38,6 @@ final class DynamicCell3: UITableViewCell {
             dynamicImageTopConstraint.constant = 20
             dynamicImageHeightConstraint.constant = 40
         } else {
-            dynamicImageView.image = nil
             dynamicImageTopConstraint.constant = 0
             dynamicImageHeightConstraint.constant = 0
         }
